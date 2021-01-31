@@ -1,0 +1,106 @@
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    color: white;
+    background-color: #444;    
+    height: 8vh;
+    z-index: 100;
+    width: 100%;
+
+    .hamburger-menu {
+        font-size: 36px;
+        width: 65px;
+        align-items:center;
+        cursor: pointer;
+        display: none; //do not show until screen is the right side
+    }
+
+    .nav-name{
+        font-weight: 500;
+        font-size: 22px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    .menu-content-container {
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+    }
+
+    ul {
+        height: 100%;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style-type: none;
+        margin: 0 20px 0 50px;
+
+        a {
+            text-decoration: none;
+            padding: 0 20px 0 20px;
+            font-size: 20px;
+            color: white;
+
+            &:hover {
+                color: $text-link;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .site-navigation {
+        .menu-content-container {
+            width: 300px;
+            height: calc(100% - 65px);
+            background: #444;
+            position: fixed;
+            top: 65px;
+            left: -300px;
+            transition: 300ms ease left;
+            //reverse order of display - icon on top
+            flex-direction: column-reverse;
+
+            ul {
+                flex-direction: column;
+                justify-content: flex-start;
+
+                li {
+                    text-align:left;
+                    height: 65px;
+                    display: flex;
+                    align-items: center;
+                }
+                a {
+                    padding: 20px 15px;
+                    width: 100%;
+                }
+            }
+
+            ul, li, .menu-avatar-container {
+                width: 100%;
+            }
+
+            .ant-avatar {
+                align-self: flex-start;
+                margin-left: 30px;
+            }
+        }
+
+        &.active {
+            .menu-content-container {
+                left: 0px;
+            }
+        }
+        .hamburger-menu {
+            display: flex;
+        }
+    }
+}
