@@ -1,0 +1,34 @@
+import React, { Component, useState } from "react";
+import Terminal from 'terminal-in-react';
+import TerminalMsg from '../assets/content/custom-terminal-content/custom-terminal-beg-msg'
+import CustomTerminalCommands from '../assets/content/custom-terminal-content/custom-terminal-commands'
+import CustomTerminalDescriptions from '../assets/content/custom-terminal-content/custom-terminal-descriptions'
+
+const CustomTerminal = () => {
+    const terminalBegMessage = TerminalMsg;
+        
+    return (
+        <div className='terminal-flex-container'>
+            <div className='custom-terminal'>
+                <Terminal
+                color='#f2f2f7'
+                allowTabs	= {false}
+                backgroundColor='#3a3a3c'
+                barColor='#e5e5ea'
+                prompt = 'white'
+                style={{ fontSize: "1em" }}
+                commands={CustomTerminalCommands}
+                descriptions={CustomTerminalDescriptions}
+                actionHandlers={{
+                    //takes away default
+                    handleClose: (toggleClose) => {},
+                    handleMaximise: (toggleMaximise) => {},
+                    handleMinimise: (toggleMinimise) => {}
+                }}
+                msg = {terminalBegMessage}
+                />
+            </div>
+        </div>
+    );
+
+}; export default CustomTerminal;

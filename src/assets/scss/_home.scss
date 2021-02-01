@@ -1,0 +1,131 @@
+// @font-face {
+//     font-family: 'Dunkin';
+//     src: url('./../fonts/Dunkin.ttf');
+// }
+
+// @font-face {
+//     font-family: 'Traffolight';
+//     src: url('./../fonts/Traffolight.otf');
+// }
+
+// @font-face {
+//     font-family: 'NeutraText';
+//     src: url('./../fonts/NeutraText-Book.otf');
+// }
+
+.home-container{
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden !important;
+    background-color: #dad9d6;
+
+    .rightSlant ,
+    .upTri,
+    .rightTri,
+    .rightSemiCir,
+    .leftSlant,
+    .leftTri,
+    .downTri,
+    .topSemiCir,
+    .leftSemiCir,
+    .bottomSemiCir {
+        position: absolute;
+        will-change: transform;
+    }
+
+    .rightSlant {
+        color: #bf5af2;
+        font-size: 2em;     
+        // font-weight: bold;  
+        border-radius: 50%;
+        top: 10%;
+        left: 17%;
+        z-index: 1;
+    }  
+    
+    .upTri {
+        color: #5856d6;
+        font-size: 2em;    
+        border-radius: 50%;
+        top: 90%;
+        left: 80%;
+        z-index: 1;
+    }
+
+    .rightTri {
+        color: #ff9f0a;
+        font-size: 2em;    
+        border-radius: 50%;
+        top: 70%;
+        left: 7%;
+        z-index: 1;
+    }
+
+    .rightSemiCir {
+        color: #64d2ff;
+        font-size: 3em;    
+        border-radius: 50%;
+        top: 85%;
+        left: 24%;
+        z-index: 1;
+    }
+
+    .leftSlant {
+        color: #30d158;
+        // font-weight: bold;
+        font-size: 2em;    
+        border-radius: 50%;
+        top: 60%;
+        left: 94%;
+        z-index: 1;
+    }
+
+    .leftTri {
+        color: #0a84ff;
+        font-size: 2em;    
+        border-radius: 50%;
+        top: 22%;
+        left: 34%;
+        z-index: 1;
+    }
+
+    .downTri {
+        color: #ff375f;
+        font-size: 2em;    
+        border-radius: 50%;
+        top: 20%;
+        left: 84%;
+        z-index: 1;
+    }
+
+    
+    .topSemiCir {
+        color: #ffd60a;
+        font-size: 3em;    
+        border-radius: 50%;
+        top: 10%;
+        left: 92%;
+        z-index: 1;
+    }
+
+    .leftSemiCir {
+        color: #ff2d55;
+        font-size: 3em;    
+        border-radius: 50%;
+        top: 35%;
+        left: 15%;
+        z-index: 1;
+    }
+
+    .bottomSemiCir {
+        color: #af52de;
+        font-size: 2em;    
+        border-radius: 50%;
+        top:80%;
+        left: 67%;
+        z-index: 1;
+    }
+
+}

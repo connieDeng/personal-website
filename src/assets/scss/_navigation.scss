@@ -28,7 +28,6 @@
     .menu-content-container {
         display: flex;
         align-items: center;
-        margin-right: 30px;
     }
 
     ul {
@@ -58,22 +57,25 @@
 @media screen and (max-width: 900px) {
     .site-navigation {
         .menu-content-container {
-            width: 300px;
-            height: calc(100% - 65px);
+            position: absolute;
+            width: 250px;
+            height: 375px;
             background: #444;
             position: fixed;
-            top: 65px;
-            left: -300px;
-            transition: 300ms ease left;
+            right: 0;
+            top: -400px;
+            transition: 400ms ease top;
             //reverse order of display - icon on top
             flex-direction: column-reverse;
 
             ul {
+                right: 0;
                 flex-direction: column;
                 justify-content: flex-start;
 
                 li {
-                    text-align:left;
+                    padding-left: 60px;
+                    text-align: left;
                     height: 65px;
                     display: flex;
                     align-items: center;
@@ -84,19 +86,16 @@
                 }
             }
 
-            ul, li, .menu-avatar-container {
+            ul, li {
                 width: 100%;
             }
 
-            .ant-avatar {
-                align-self: flex-start;
-                margin-left: 30px;
-            }
         }
 
         &.active {
             .menu-content-container {
-                left: 0px;
+                top: 8vh;
+                right: 0px;
             }
         }
         .hamburger-menu {

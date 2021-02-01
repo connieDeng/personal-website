@@ -1,0 +1,16 @@
+.terminal-flex-container{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .custom-terminal{
+        margin-top: 1.5%;
+        // nav bar is 100
+        z-index: 99;
+        width: 60vh;
+    }
+}
+
