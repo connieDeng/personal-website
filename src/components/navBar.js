@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-scroll';
 import { Squash as Hamburger } from 'hamburger-react'
-// import Pdf from './../../ConnieDengCurrent.pdf'
+import Pdf from './../assests/ConnieDengResume.pdf'
 import { NavBar } from '../styledComponents/navBarCS';
 
 const navLinks = [
@@ -39,7 +39,7 @@ export default function NavBarStyled () {
                 </li>
                 ))
             }
-           {/* <li className='resume'><a href={Pdf} target='_blank' rel='noopener noreferrer'>Resume</a></li> */}
+            <li className='resume'><a href={Pdf} target='_blank' rel='noopener noreferrer'>Resume</a></li>
             </ul>
         </div>
         {/* <i> tage is used to mark up text that is set off from the normal prose in a document */}

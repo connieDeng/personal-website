@@ -13,7 +13,7 @@ export const StyledHome = styled.main`
     .name{
         font-family: Couture Bold;
         font-size: 100px;
-        letter-spacing: .08em;
+        letter-spacing: .1em;
     }
 
     .intro-block-container{
@@ -24,16 +24,19 @@ export const StyledHome = styled.main`
     }
 
     .logo-container{
+        z-index: 0;
         position: absolute;
         overflow: hidden;
         bottom: 0;
         right: 2em;
+
         .logo{
             position: relative;
             top: 5em;
         }
     }
-    background-color: ${props => props.theme.titleColor};
-    color: ${props => props.theme.pageBackground};
+
+    background-color: ${props => props.theme.pageBackground};
+    color: ${props => props.theme.divColor};
     transition: all .5s ease;
 `;

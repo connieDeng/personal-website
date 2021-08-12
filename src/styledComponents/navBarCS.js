@@ -8,7 +8,7 @@ export const NavBar = styled.nav`
     z-index: 100;
     width: 100%;
     top:0;
-    background-color: ${props => props.theme.pageBackground};
+    background-color: ${props => props.theme.opaqueColor};
     color: ${props => props.theme.divColor};
     &:focus {
         outline: none;
@@ -36,41 +36,44 @@ export const NavBar = styled.nav`
     .menu-content-container {
         display: flex;
         align-items: center;
-    }
 
-    ul, resume {
-        font-family: Biko;
-        height: 100%;
-        margin-block-start: 0;
-        margin-block-end: 0;
-        padding-inline-start: 0;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        list-style-type: none;
-        margin: 0 20px 0 50px;
+        ul {
+            font-family: Biko;
+            height: 100%;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            padding-inline-start: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            list-style-type: none;
+            margin: 0 20px 0 50px;
+            color: ${props => props.theme.divColor};
+            text-decoration: none !important;
+            
+            .resume{
+                border: 2px solid lightgrey;
+                border-radius: 2px;
+                padding: 8px;
+            }
 
-        .resume{
-            border: 2px solid lightgrey;
-            border-radius: 2px;
-            padding: 8px;
+            a {
+                padding: 0 20px 0 20px;
+                font-size: 20px;
+                text-decoration: none !important;
+                color: ${props => props.theme.divColor};
 
-        }
-
-        a {
-            text-decoration: none;
-            padding: 0 20px 0 20px;
-            font-size: 20px;
-
-            &:hover {
-                color: green;
+                &:hover {
+                    color: #53AB48;
+                }
             }
         }
     }
     // media
     @media (max-width: 900px) {
+        transition: all .5s ease;
         color: ${props => props.theme.divColor};
-        
+
         .menu-content-container {
             position: absolute;
             width: 250px;
@@ -103,7 +106,6 @@ export const NavBar = styled.nav`
             ul, li {
                 width: 100%;
             }
-
         }
 
         &.active {
@@ -112,6 +114,7 @@ export const NavBar = styled.nav`
                 right: -250px;
             }
         }
+
         .hamburger-menu {
             display: flex;
         }

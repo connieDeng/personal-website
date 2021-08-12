@@ -1,8 +1,12 @@
-import {Page, ToggleDM} from '../styledComponents/baseCS'
-import { Element } from 'react-scroll'
-import NavBarStyled from './navBar';
+import {Page, ToggleDM} from '../styledComponents/baseCS';
+import { Element } from 'react-scroll';
+import { ImSun } from "react-icons/im"
+import { IoIosMoon } from "react-icons/io";
 
+import NavBarStyled from './navBar';
 import Home from './home';
+import About from './about';
+import Contact from './contact';
 
 function Splash(props) {
     function changeTheme() {
@@ -13,7 +17,7 @@ function Splash(props) {
         }
     };
 
-    const icon = props.theme === "light" ? <div size={40}> icon here </div>: <div size={40}> icon here </div>;
+    const icon = props.theme === "light" ?  <ImSun style={{height: "25px", width:'25px'}} /> : <IoIosMoon style={{height: "25px", width:'25px'}}/>;
 
     return (
         <Page className="main-container">
@@ -25,13 +29,13 @@ function Splash(props) {
                     <Home/>
                 </Element>
                 <Element name="about" className="category-container">
-                    {/* <About/> */}
+                    <About/>
                 </Element>
                 <Element name="projects" className="category-container">
                     {/* <Projects/> */}
                 </Element>
                 <Element name="contact" className="category-container">
-                    {/* <Contact/> */}
+                    <Contact/>
                 </Element>
         </Page>
     );
