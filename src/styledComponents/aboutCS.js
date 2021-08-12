@@ -32,7 +32,7 @@ export const StyledAbout = styled.main`
             top: 2.3em;
             width: 200px;
             height: 20px;
-            background-color: rgba(60, 179, 113, 0.8);
+            background-color: rgba(255, 45, 85);
         }
     }
 
