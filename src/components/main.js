@@ -7,6 +7,7 @@ import NavBarStyled from './navBar';
 import Home from './home';
 import About from './about';
 import Contact from './contact';
+import Projects from './projects';
 
 function Splash(props) {
     function changeTheme() {
@@ -32,7 +33,7 @@ function Splash(props) {
                     <About/>
                 </Element>
                 <Element name="projects" className="category-container">
-                    {/* <Projects/> */}
+                    <Projects/>
                 </Element>
                 <Element name="contact" className="category-container">
                     <Contact/>
