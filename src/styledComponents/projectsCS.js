@@ -6,7 +6,10 @@ export const StyledProjects = styled.div`
     width: 100%;
     overflow-x: hidden !important;
     overflow-y: hidden !important;
-
+    background-color: ${(props) => props.theme.pageBackground};
+    color: ${(props) => props.theme.divColor};
+    transition: all .5s ease;
+    
     // Category Container
     .category-container{
         position: absolute;
@@ -60,7 +63,7 @@ export const StyledProjects = styled.div`
         left: -.1em;
         z-index: -100;
         font-size: 16em;
-        color: rgba(0, 0, 0, 0.1);
+        color: black,
         display: static;
         font-family: Couture Bold;
     }
@@ -73,8 +76,3 @@ export const StyledProjects = styled.div`
         
 }
 `;
-
-
-
-
-
