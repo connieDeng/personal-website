@@ -32,7 +32,7 @@ export const StyledHome = styled.main`
 
     .logo {
       position: relative;
-      top: 5em;
+      top: 0.25em;
     }
   }
 

@@ -42,7 +42,7 @@ export default function Home() {
       <div className="logo-container">
         <img
           className="logo"
-          src={process.env.PUBLIC_URL + "/images/icon.png"}
+          src={process.env.PUBLIC_URL + "/images/connie-icon.png"}
           alt="Logo"
           style={{ maxWidth: "20em" }}
         />

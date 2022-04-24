@@ -51,7 +51,7 @@ function TextTypingAnimation(props) {
             );
           }
         },
-        shouldDelayNextProcess ? 5000 : 150 - Math.random() * 100
+        shouldDelayNextProcess ? 5500 : 150 - Math.random() * 100
       );
     }
 
