@@ -1,2 +1,9 @@
-const blurb = "Hi! 👋 I'm an an aspiring software enginner based in NYC.";
+const blurb = (
+  <span>
+    Hey, I'm Connie 👋 I'm a software enginner!
+    <br></br>
+    I'm currently looking for work opportunities in NYC.
+  </span>
+);
+
 export default blurb;

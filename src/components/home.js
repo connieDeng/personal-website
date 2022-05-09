@@ -16,7 +16,6 @@ export default function Home() {
           <TextTypingAnimation texts={["NNIE DENG", "DENG"]} />
         </span>
         <div className="blurb"> {blurb} </div>
-        <div className="blurb"> This website is still a work in progress! </div>
 
         <section>
           <Link

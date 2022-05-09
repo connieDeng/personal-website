@@ -18,7 +18,7 @@ const projectsContent = [
     title: "RecruitFind.Work",
     shortDescription:
       "Application for Recruiters to find the right candidate for the job",
-    link: "http://recruitfind.work/",
+    link: "https://github.com/Wilfred0zz/RecruitFind.work",
     image: "fillerImg.jpg",
   },
 ];
