@@ -15,6 +15,8 @@ export const StyledProjects = styled.section`
         height: 100vh;
         width: 50%;
         float:left;
+        background-color: gray;
+        
 
 
         .projects-showcase-container {

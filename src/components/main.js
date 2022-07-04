@@ -35,9 +35,9 @@ function Splash(props) {
       <Element name="about" className="category-container">
         <About />
       </Element>
-      <Element name="projects" className="category-container">
+      {/* <Element name="projects" className="category-container">
         <Projects />
-      </Element>
+      </Element> */}
       <Element name="contact" className="category-container">
         <Contact />
       </Element>
